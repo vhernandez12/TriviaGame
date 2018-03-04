@@ -1,0 +1,27 @@
+body{
+    background-color: brown;
+    padding-left:20% ;
+    padding-right: 40%;
+}
+#container{
+    background-color:teal;
+    height:600px;
+    width: 500px;
+}
+#button
+#timeRemaining{
+    background-color: rebeccapurple;
+    text-align: center;
+}
+#ques1{
+    background-color: azure;
+    text-align: center;
+}
+#ques2{
+    background-color: aquamarine;
+    text-align: center;
+}
+#ques3{
+    background-color: blueviolet;
+    text-align: center;
+}
