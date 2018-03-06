@@ -5,30 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-    <script type = "text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
-
-    
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">  
 </head>
 <body>
    
     <div class="jumbotron">
         <div class="container">
-            <div class="row">
-                <h2 class="text-center">80's U.S. Trivia</h2>
-                <div class="mainArea col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
-                    <div class="btnContainer">
-                        <button type="button" class="btn btn-default btn-lg btn-primary center-block startBtn">START</button>
-                
-                    </div>
-                </div>  
+            <div id="SplashScreen">
+                <h1 class="title">80s Trivia</h1>
+            <input id="StartButton" type="button" class="btn btn-primary center-block" value="Start"/>
             </div>
+
+        <canvas id="GameCanvas" style="display: none;">Game Stuff  </canvas>
+        <input id="submitButton" style= "display:none;" type="button" class="btn btn-primary center-block" value="Submit"/>
+
         </div>
     </div>
-    <div class="container">
 
-    </div> <!-- /container -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="assets/javascript/app.js"></script>
 </body>
 </html>
