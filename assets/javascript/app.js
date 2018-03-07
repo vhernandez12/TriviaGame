@@ -1,11 +1,5 @@
 
-//click start button to start game
-$("#startButton").click(function () {
-
-  $("#splashScreen").hide();
-  $("gameScreen").show();
-  console.log("hi");
-});
+  $(document).ready(function() {  
 
     //sumbits quiz
     function submitQuiz() {
@@ -72,4 +66,4 @@ $(document).ready(function() {
 
   });
 });
-
+});
