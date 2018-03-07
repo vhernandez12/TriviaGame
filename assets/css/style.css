@@ -1,3 +1,14 @@
+body{
+    padding-left: 30%;
+    padding-right: 30%;
+    background-image: url("assets/images/rubiks.jpg");
+    background-color: aquamarine;
+}
 #splashScreen{
     text-align: center;
+}
+#gameScreen{
+    margin-right: 60px;
+    margin-left: 60px;
+    background-color: yellowgreen;
 }
