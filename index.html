@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>80's Trivia</title>
+        <title>80's Trivia</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
+    <div id="splashScreen">
+           <h2>80's Trivia</h2>
+            <input id="startButton" type="button" class="btn btn-primary center-block" value="Start"/>
 
-    <
+    </div>
+
+
+    <div id="gameScreen" style="display:none;">
         <h2 class="quizHeader">80's Trivia</h2>
         
-          <table style="width:583px">
+          <table style="width:960">
           <tr>
             
                 <div class="quest1">
@@ -91,7 +97,7 @@
                 <input class="quizSubmit" id="submitButton"
                 type="submit" value="Submit"/>
           </div>
-        
+        </div>
       <!--show only wrong answers on submit-->
           <div class="quizAnswers" id="correctAnswer1"></div>
               <div class="quizAnswers" id="correctAnswer2"></div>

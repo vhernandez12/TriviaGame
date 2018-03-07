@@ -1,5 +1,12 @@
 
-  
+$(document).ready(function () {
+//click start button to start game
+$("#startButton").click(function () {
+  $("#splashScreen").hide();
+  $("gameScreen").show();
+  console.log("hi");
+});
+
     //sumbits quiz
     function submitQuiz() {
       console.log('submited');
@@ -62,6 +69,7 @@ $(document).ready(function() {
 
 	$('#submitButton').click(function() {
 		$(this).addClass('hide');
-	});
 
+  });
+});
 });
