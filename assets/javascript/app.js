@@ -1,20 +1,23 @@
-
-  $(document).ready(function() {  
-
+$("#startButton").click(function () {
+  //hides start button and shows questions
+  $("#splashScreen").hide();
+  console.log("splash");
+   $("#gameScreen").show();
+  
+});
     //sumbits quiz
-    function submitQuiz() {
-      console.log('submited');
+    function submitQuiz() { 
 
     function answerScore (qName) {
       var radiosNo = document.getElementsByName(qName);
 
       for (var i = 0, length  = radiosNo.length; i < length; i++) {
-        if (radiosNo[i.checked]) {
-          var answerValue = Number(radiosNo)[i].value;
+        if (radiosNo[i].checked) {
+          var answerValue = Number(radiosNo[i].value);
         }
       }
       if(isNaN(answerValue)) {
-        answerValue === 0;
+        answerValue = 0;
       }
       return answerValue;
     }
@@ -23,7 +26,7 @@
     
     // function to return correct answer string
 		function correctAnswer (correctStringNo, qNumber) {
-			console.log("qNumber: " + qNumber);  // logs 1,2,3,4 after called below
+		
 			return ("The correct answer for question #" + qNumber + ": &nbsp;<strong>" +
 				(document.getElementById(correctStringNo).innerHTML) + "</strong>");
 			}
@@ -65,5 +68,4 @@ $(document).ready(function() {
 		$(this).addClass('hide');
 
   });
-});
 });
