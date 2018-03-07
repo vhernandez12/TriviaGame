@@ -1,28 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">  
+	<title>80's Trivia</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
-   
-    <div class="jumbotron">
-        <div class="container">
-            <div id="SplashScreen">
-                <h1 class="title">80s Trivia</h1>
-            <input id="StartButton" type="button" class="btn btn-primary center-block" value="Start"/>
-            </div>
+        <h2 class="quizHeader">Take a Quiz!</h2>
+        
+          <table style="width:583px">
+          <tr>
+            
+                <div class="quest1">
+                    <p class="question">1.Which presidents served during the 80's?</p>
+      
+                  <ul>
+                  <input class="answer" type="radio" name="q1" value="1">
+                  <label id="correctString1">Jimmy Carter, George W.H. Bush, Ronald Reagan</label>
+               <!-- "br" allows for questions to separate-->
+                  <br>
+                  <input class="answer" type="radio" name="q1" value="0">
+                  <label>Jimmy Carter and George W. Bush</label>
+                  <br>
+                  <input class="answer" type="radio" name="q1" value="0">
+                  <label>Bill Clinton Jimmy Carter and George W.H. Bush</label>
+                  <br>
+                 </ul>
+                </div>
+            
+            
+                <div class="quest2">
+                    <p class="question">2. Which war ended in the 80's?</p>
+      
+                  <ul>
+                  <input class="answer" type="radio" name="q2" value="0">
+                  <label>The U.S. is always in war</labe></label>
+                  <br>
+                  <input class="answer" type="radio" name="q2" value="1">
+                  <label id="correctString2">Cold War</label>
+                  <br>
+                  <input class="answer" type="radio" name="q2" value="0">
+                  <label>The War on Drugs</label>
+                  <br>
+                  </ul>
+                </div>
+            
+          </tr>
+          <tr>
+        
+                <div class="quest3">
+                    <p class="question">3.Which national holiday became celebrated in the mid-1980's?</p>
+      
+                  <ul>
+                  <input class="answer" type="radio" name="q3" value="0">
+                  <label>Labor Day</label>
+                  <br>
+                  <input class="answer" type="radio" name="q3" value="1">
+                  <label id="correctString3">Martin Luther King Jr. Day</label>
+                  <br>
+                  <input class="answer" type="radio" name="q3" value="0">
+                  <label>The U.S. has celebrated every national holiday since the beginning of time</label>
+                  <br>
+                  </ul>
+              </div>
 
-        <canvas id="GameCanvas" style="display: none;">Game Stuff  </canvas>
-        <input id="submitButton" style= "display:none;" type="button" class="btn btn-primary center-block" value="Submit"/>
-
-        </div>
-    </div>
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="assets/javascript/app.js"></script>
-</body>
-</html>
+                <div class="quest4">
+                    <p class="question">4. Who became the first woman to be inducted into the Rock and Roll Hall of Fame?</p>
+      
+                  <ul>
+                  <input class="answer" type="radio" name="q4" value="0">
+                  <label>Blondie</label>
+                  <br>
+                  <input class="answer" type="radio" name="q4" value="1">
+                  <label id="correctString4">Aretha Franklin</label>
+                  <br>
+                  <input class="answer" type="radio" name="q4" value="0">
+                  <label>Madonna</label>
+                  <br>
+                  </ul>
+                </div>
+            
+          </tr>
+          </table>
+      <br/>
+        <div class="submitter">
+                <input class="quizSubmit" id="submitButton"
+                type="submit" value="Submit"/>
+          </div>
+        
+      <!--show only wrong answers on submit-->
+          <div class="quizAnswers" id="correctAnswer1"></div>
+              <div class="quizAnswers" id="correctAnswer2"></div>
+          <div class="quizAnswers" id="correctAnswer3"></div>
+          <div class="quizAnswers" id="correctAnswer4"></div>
+      
+      <!--show score upon submit-->
+          <div>
+              <h2 class="quizScore" id="userScore"></h2>
+          </div>
+          </div>
+      
+      </body>
