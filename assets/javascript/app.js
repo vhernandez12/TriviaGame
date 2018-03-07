@@ -1,7 +1,7 @@
 
-$(document).ready(function () {
 //click start button to start game
 $("#startButton").click(function () {
+
   $("#splashScreen").hide();
   $("gameScreen").show();
   console.log("hi");
@@ -72,4 +72,4 @@ $(document).ready(function() {
 
   });
 });
-});
+
